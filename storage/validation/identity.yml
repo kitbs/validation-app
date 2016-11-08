@@ -1,0 +1,200 @@
+EU:
+    -   Code: VAT
+        Name: Value Added Tax Identification Number
+        Validation:
+            - https://github.com/Respect/Validation/blob/master/docs/Vatin.md
+            - https://github.com/malenkiki/codevro.php/blob/master/src/Malenki/Codevro/Euro/VatNumber.php
+
+PL:
+    -   Code: PESEL
+        Name: Powszechny Elektroniczny System Ewidencji Ludności
+        Type: Person
+        Validation:
+            - https://github.com/Respect/Validation/blob/master/docs/Pesel.md
+        Reference:
+            - https://en.wikipedia.org/wiki/PESEL
+    -   Code: DO
+        Name: Dowód Osobisty
+        Type: Person
+        Validation:
+            - https://github.com/Respect/Validation/blob/master/docs/IdentityCard.md
+        Reference:
+            - https://en.wikipedia.org/wiki/PESEL
+    -   Code: REGON
+        Name: Rejestr Gospodarki Narodowej
+        Type: Business
+        Validation:
+        Reference:
+            - https://en.wikipedia.org/wiki/PESEL
+ES:
+    -   Code: NIF
+        Name: Número de identificacíon fiscal
+        Type: Person
+        Validation:
+            - https://github.com/Respect/Validation/blob/master/docs/Nif.md
+        Reference:
+            - https://es.wikipedia.org/wiki/N%C3%BAmero_de_identificaci%C3%B3n_fiscal
+
+BR:
+    -   Code: CPF
+        Name: Cadastro de Pessoas Físicas
+        Type: Person
+        Validation:
+            - https://github.com/Respect/Validation/blob/master/docs/Cpf.md
+        Reference:
+            - https://en.wikipedia.org/wiki/Cadastro_de_Pessoas_F%C3%ADsicas
+    -   Code: CPNJ
+        Name: Cadastro Nacional da Pessoa Jurídica
+        Type: Business
+        Validation:
+            - https://github.com/Respect/Validation/blob/master/docs/Cnpj.md
+        Reference:
+            - https://en.wikipedia.org/wiki/CNPJ
+    -   Code: CNH
+        Name: Carteira Nacional de Habilitação
+        Type: Person
+        Validation:
+            - https://github.com/Respect/Validation/blob/master/docs/Cnh.md
+        Reference:
+            - https://en.wikipedia.org/wiki/Driving_licence_in_Brazil
+
+NL:
+    -   Code: BSN
+        Name: Burgerservicenummer
+        Type: Person
+        Validation:
+            - https://github.com/Respect/Validation/blob/master/docs/Bsn.md
+
+DE:
+    -   Code: BIC
+        Name: Bank Identifier Code
+        Type: Bank Account
+        Validation:
+            - https://github.com/Respect/Validation/blob/master/docs/Bic.md
+            - https://github.com/bav-php/bav
+
+AU:
+    -   Code: ABN
+        Name: Australian Business Number
+        Type: Business
+        Validation:
+            - https://github.com/kbsjunk/adapta-components/blob/master/src/Adapta/Components/Validators/Rules/Abn.php
+    -   Code: TFN
+        Name: Tax File Number
+        Type: Person
+        Validation:
+            - https://github.com/kbsjunk/adapta-components/blob/master/src/Adapta/Components/Validators/Rules/Tfn.php
+    -   Code: ACN
+        Name: Australian Company Number
+        Type: Business
+        Validation:
+            - https://github.com/kbsjunk/adapta-components/blob/master/src/Adapta/Components/Validators/Rules/Acn.php
+    -   Code: Medicare
+        Name: Medicare Number
+        Type: Person
+        Validation:
+            - https://github.com/kbsjunk/adapta-components/blob/master/src/Adapta/Components/Validators/Rules/AuMedicare.php
+    -   Code: MedicareProvider
+        Name: Medicare Provider Number
+        Type: Business
+        Validation:
+            - https://github.com/kbsjunk/adapta-components/blob/master/src/Adapta/Components/Validators/Rules/AuMedicareProvider.php
+
+US:
+    -   Code: NPI
+        Name: National Provider Identifier
+        Type: Business
+        Validation:
+            - https://github.com/kbsjunk/adapta-components/blob/master/src/Adapta/Components/Validators/Rules/UsNpi.php
+        Reference:
+            - https://en.wikipedia.org/wiki/National_Provider_Identifier
+    -   Code: EIN
+        Name: Employer Identification Number
+        Type: Business
+        Validation:
+            - https://github.com/malenkiki/codevro.php/blob/master/src/Malenki/Codevro/Us/Ein.php
+        Reference:
+            - https://en.wikipedia.org/wiki/Employer_Identification_Number
+    -   Code: SSN
+        Name: Social Security Number
+        Type: Business
+        Validation:
+            - https://github.com/malenkiki/codevro.php/blob/master/src/Malenki/Codevro/Us/Ssn.php
+        Reference:
+            -
+
+FR:
+    -   Code: SIREN
+        Name: Système informatique du répertoire des entreprises
+        Type: Business
+        Validation:
+            - https://github.com/malenkiki/codevro.php/blob/master/src/Malenki/Codevro/Fr/Siren.php
+        Reference:
+            - https://en.wikipedia.org/wiki/SIREN_code
+    -   Code: SIRET
+        Name: Système d'identification du répertoire des établissements
+        Type:
+        Validation:
+            - https://github.com/malenkiki/codevro.php/blob/master/src/Malenki/Codevro/Fr/Siret.php
+        Reference:
+            - https://en.wikipedia.org/wiki/SIREN_code
+    -   Code: NAF
+        Name:
+        Type:
+        Validation:
+            - https://github.com/malenkiki/codevro.php/blob/master/src/Malenki/Codevro/Fr/Naf.php
+        Reference:
+            -
+    -   Code: NIR
+        Name: Numéro d’inscription au répertoire
+        Type: Person
+        Validation:
+            - https://github.com/malenkiki/codevro.php/blob/master/src/Malenki/Codevro/Fr/Nir.php
+        Reference:
+            - http://fr.wikipedia.org/wiki/Num%C3%A9ro_de_s%C3%A9curit%C3%A9_sociale_en_France
+    -   Code: RIB
+        Name: Relevé d’identité bancaire
+        Type: Bank
+        Validation:
+            - https://github.com/malenkiki/codevro.php/blob/master/src/Malenki/Codevro/Fr/Rib.php
+            - https://fr.wikipedia.org/wiki/Basic_Bank_Account_Number#V.C3.A9rification_du_RIB_en_PHP
+        Reference:
+            - https://fr.wikipedia.org/wiki/Basic_Bank_Account_Number
+            - https://fr.wikipedia.org/wiki/Basic_Bank_Account_Number#Conversion_du_RIB_en_IBAN_en_PHP
+
+International:
+    -   Code: BIC
+        Name: Bank Identifier Code
+        Type: Bank
+        Validation:
+            - https://github.com/malenkiki/codevro.php/blob/master/src/Malenki/Codevro/Intl/Bic.php
+        Reference:
+            - https://en.wikipedia.org/wiki/ISO_9362
+            - https://www2.swift.com/bsl/index.faces
+
+GB:
+    -   Code: NIN
+        Name: National Insurance Number
+        Type: Person
+        Validation:
+            - https://github.com/ronanguilloux/IsoCodes/blob/master/src/IsoCodes/Uknin.php
+        Reference:
+            - http://stackoverflow.com/questions/17928496/use-regex-to-validate-a-uk-national-insurance-no-nino-in-an-html5-pattern-attri/17929051#17929051
+            - https://www.gov.uk/hmrc-internal-manuals/national-insurance-manual/nim39110
+    -   Code: UTR
+        Name: Unique Taxpayer Reference
+        Type: [Person, Business]
+        Validation:
+            -
+        Reference:
+            - http://utr.org.uk/
+    -   Code: Company Number
+        Name: Company Number
+        Type: Business
+        Validation:
+            -
+        Reference:
+            - https://beta.companieshouse.gov.uk/
+
+Misc:
+    - https://github.com/ronanguilloux/IsoCodes/tree/master/src/IsoCodes

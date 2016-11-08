@@ -1,0 +1,12 @@
+/**
+ * __RULENAME__ Validator
+ *
+ * Syntax: __SYNTAX__
+ */
+
+Validator::extend('__RULE__', function($attribute, $value, $parameters, $validator) {
+    try {
+        return \__CLASS__::__METHOD__($value__PARAMETERS__);
+    }
+    catch (\Exception $e) { return false; }
+});
